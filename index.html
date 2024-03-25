@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>San Diego Top Spots</title>
+</head>
+
+<body>
+    <h1>San Diego Top Spots</h1>
+    <div class="dropdown">
+        <select id="category">
+            <option value="all">All Categories</option>
+            <option value="category1">Outdoor Activities</option>
+            <option value="category2">Sightseeing</option>
+            <option value="category3">Food & Drink</option>
+            <option value="category4">Shopping</option>
+            <option value="category5">Family-Friendly</option>
+            <option value="category6">Nightlife & Music</option>
+            <option value="category7">Unique Experiences</option>
+            <option value="category8">Arts, Cultural & Educational</option>
+
+        </select>
+    </div>
+    <div id="map-container">
+        <iframe src="https://www.google.com/maps/d/embed?mid=1nntL1dVGprT1EbRWmclkoNCvNMVyXT8&ehbc=2E312F" width="100%" height="480"></iframe>    
+    </div>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Description</th>
+                <th>Link</th>
+            </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+    </table>
+</body>
+
+</html>
